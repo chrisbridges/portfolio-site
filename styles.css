@@ -14,6 +14,7 @@ html,body {
   --my-gray-1: #d7d8da;
   --my-gray-2: #afb2b7;
   --my-gray-3: #7f8084;
+  --myblue: #5e92c9;
 }
 
 * {
@@ -44,6 +45,8 @@ body {
 header h1 {
   font-size: 40px;
   margin-bottom: 20px;
+  border-bottom: 2px var(--myblue) solid;
+  padding-bottom: 10px;
 }
 
 .bold-text {
@@ -79,7 +82,8 @@ nav li {
 
 #intro .intro-text {
   color: var(--my-gray-1);
-  margin-bottom: 20px;
+  margin-bottom: 20%;
+  font-size: 17px;
 }
 
 .contact-icons {
@@ -94,10 +98,15 @@ nav li {
   text-decoration: none;
 }
 
-.contact-icon-email, .contact-icon-linkedin, .contact-icon-github {
+.contact-icon {
   color: var(--my-white);
   text-align: center;
+  transition: 0.5s;
 }
+
+.contact-icon:hover {
+  color: var(--myblue);
+} 
 
 .scroll-down-chevron {
   position: absolute;
@@ -111,12 +120,39 @@ nav li {
 }
 
 #skills {
-  background-color: var(--my-gray-1);
+  background-color: var(--my-white);
+  color: var(--my-black);
 }
 
 #skills h2 {
   margin-bottom: 20px;
   text-decoration: underline;
+}
+
+#skills .primary-strength {
+  margin-bottom: 20px;
+}
+
+.tech-skills-icon {
+  width: 50px;
+  list-style: none;
+  display: inline-block;
+}
+
+.react {
+  fill: #00bfff;
+}
+
+.mocha {
+  fill: #934814;
+}
+
+.heroku {
+  fill: #6567a5;
+}
+
+.confluence {
+  fill: #3572b0;
 }
 
 @media only screen and (min-width: 640px) {
