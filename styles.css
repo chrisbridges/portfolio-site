@@ -135,10 +135,11 @@ nav li {
 
 .tech-skills-icon {
   width: 50px;
+  height: auto;
   list-style: none;
   display: inline-block;
 }
-
+/* SVG imports weren't loading proper colors for some icons, so implemented them here */
 .react {
   fill: #00bfff;
 }
@@ -153,6 +154,10 @@ nav li {
 
 .confluence {
   fill: #3572b0;
+}
+
+.webpack {
+  fill: #1c78c0;
 }
 
 @media only screen and (min-width: 640px) {
