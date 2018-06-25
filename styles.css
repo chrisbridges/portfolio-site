@@ -2,6 +2,19 @@
   box-sizing: border-box;
 }
 
+body {
+  padding-left: 55px;
+}
+
+.hamburger-menu {
+  position: fixed;
+  top: 1%;
+  left: 2%;
+  border-radius: 10%;
+  background-color: gray;
+  padding: 5px 10px;
+}
+
 nav ul {
   list-style-type: none;
 }
