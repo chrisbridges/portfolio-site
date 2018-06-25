@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+}
+
+nav li {
+  display: none;
+}
+
+@media only screen and (min-width: 640px) {
+
+  nav li {
+    display: inline-block;
+  }
+
+}
