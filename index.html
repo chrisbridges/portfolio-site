@@ -5,15 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="Chris Bridges is a Full Stack Developer">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
   <title>Chris Bridges</title>
 </head>
 <body>
-  <section id="intro">
-    <div class="hamburger-menu">
+  <section id="intro" class="padded-div">
+    <!-- <div class="hamburger-menu">
       <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-    </div>
+    </div> -->
     <header>      
       <nav role="navigation">
         <ul>
@@ -22,18 +23,24 @@
           <li><a href="#about">About</a></li>
         </ul>
       </nav>
-      <div>Hello! My name is</div>
+      <div class="hello">Hello! My name is</div>
       <h1>Chris Bridges</h1>
     </header>
     <div class="intro-text">
-      <p>I’m a full stack developer from Los Angeles, CA. I pride myself on providing creative solutions to unique problems, and seeing the bigger picture when it comes to the goals of a project. I believe every line of code should serve as an expression of those ambitions. When I’m not coding, I can be found playing tennis, making music with my friends, or geeking out over economic and financial data.</p>
+      <p>I’m a <span class="bold-text">full stack developer</span> from Los Angeles, CA. I pride myself on providing <span class="bold-text">creative solutions</span> to unique problems, and <span class="bold-text">seeing the bigger picture</span> when it comes to the goals of a project. I believe every line of code should serve as an expression of those ambitions. When I’m not coding, I can be found playing tennis, making music with my friends, or geeking out over economic and financial data.</p>
     </div>
-    <div class="contact-icons">Mail - LinkedIn - GitHub</div>
+    <div class="contact-icons">
+        <a href="https://www.linkedin.com/in/christopherbridges/" target="_blank"><div class="contact-icon-linkedin"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i><br>LinkedIn</div></a>
+      <a href="mailto:christopher_bridges@icloud.com" target="_top"><div class="contact-icon-email"><i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i><br>Email Me</div></a>
+      <a href="https://github.com/chrisbridges" target="_blank"><div class="contact-icon-github"><i class="fa fa-github-square fa-3x" aria-hidden="true"></i><br>GitHub</div></a>
+    </div>
+    <a href="#skills"><div class="scroll-down-chevron"><i class="fa fa-chevron-down fa-3x" aria-hidden="true"></i></div></a>
   </section>
-  <section id="skills">
+  <section id="skills" class="padded-div">
+    <h2>Skills:</h2>
     <p>My primary strength is full stack JavaScript. I am always looking for ways to improve, as well as learn new technologies.</p>
     <div class="tech-skills-icons"><span class="and-growing">and growing...</span></div>
-    <h2>My Projects:</h2>
+    <h3>My Projects:</h3>
     <div class="projects">
       <div class="project">
         <h3>Pulse</h3>
@@ -80,7 +87,7 @@
       </div>
     </div>
   </section>
-  <section id="About">
+  <section id="About" class="padded-div">
     <div class="experiences">
       <h2>I have experience in:</h2>
       <div class="experiences-list"></div>

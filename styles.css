@@ -1,9 +1,35 @@
+/* CSS reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+  margin:0;
+  padding:0;
+}
+html,body {
+  margin:0;
+  padding:0;
+}
+
+:root {
+  --my-black: #262526;
+  --my-white: #f3f3f3;
+  --my-gray-1: #d7d8da;
+  --my-gray-2: #afb2b7;
+  --my-gray-3: #7f8084;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  padding-left: 55px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.padded-div {
+  padding: 40px 40px 15px 40px;
+}
+
+.hello {
+  margin-bottom: 10px;
 }
 
 .hamburger-menu {
@@ -11,8 +37,18 @@ body {
   top: 1%;
   left: 2%;
   border-radius: 10%;
-  background-color: gray;
+  background-color: var(--my-gray-3);
   padding: 5px 10px;
+}
+
+header h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.bold-text {
+  font-weight: bold;
+  color: var(--my-white);
 }
 
 nav ul {
@@ -28,10 +64,65 @@ nav li {
   display: none;
 }
 
+#intro {
+  background-color: var(--my-black);
+  height: 100vh;
+}
+
+#intro .hello {
+  color: var(--my-gray-2);
+}
+
+#intro h1 {
+  color: var(--my-white);
+}
+
+#intro .intro-text {
+  color: var(--my-gray-1);
+  margin-bottom: 20px;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: space-between;
+  /* flex-direction: column;
+  justify-content: space-between; */
+  /* height: 50%; */
+}
+
+.contact-icons a {
+  text-decoration: none;
+}
+
+.contact-icon-email, .contact-icon-linkedin, .contact-icon-github {
+  color: var(--my-white);
+  text-align: center;
+}
+
+.scroll-down-chevron {
+  position: absolute;
+  left: 50%;
+  bottom: 2%;
+  transform: translate(-50%, 0);
+}
+
+.fa-chevron-down {
+  color: var(--my-white);
+}
+
+#skills {
+  background-color: var(--my-gray-1);
+}
+
+#skills h2 {
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
 @media only screen and (min-width: 640px) {
 
-  nav li {
+  /* nav li {
     display: inline-block;
-  }
+  } */
 
 }
