@@ -64,7 +64,6 @@ header h1 {
 
 .i-am-a {
   margin-bottom: 40px;
-  /* margin-top: 20%; */
 }
 
 .i-am-a h3 {
@@ -283,6 +282,11 @@ h2 {
 
 #contact-me h2 {
   color: var(--my-white);
+}
+
+#contact-me p {
+  color: var(--my-gray-2);
+  margin-bottom: 40px;
 }
 
 .column-of-3 {
