@@ -129,7 +129,9 @@ nav li {
 
 h2 {
   margin-bottom: 20px;
-  text-decoration: underline;
+  padding-bottom: 5px;
+  border-bottom: 2px var(--myblue) solid;
+  /* text-decoration: underline; */
 }
 
 #skills .primary-strength {
@@ -176,6 +178,14 @@ h2 {
 
 .project {
   text-align: center;
+  margin-bottom: 25px;
+}
+
+.project h3 {
+  display: flex;
+  justify-content: flex-start;
+  font-style: italic;
+  color: var(--my-black);
 }
 
 .project-image {
@@ -185,6 +195,35 @@ h2 {
 .project-image img {
   width: 100%;
   height: auto;
+}
+
+.left-chevron, .right-chevron {
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  margin: 0 2px 0 2px;
+  color: var(--my-black);
+}
+
+.project-tech-stack {
+  display: inline-block;
+}
+
+.project-tech-stack-list {
+  list-style: none;
+  margin: 15px 0 15px 0;
+}
+
+.project-tech-stack-list li {
+  display: inline-block;
+}
+
+.bullet {
+  color: var(--my-gray-3);
+}
+
+.project-description p {
+  color: var(--my-gray-3);
 }
 
 @media only screen and (min-width: 640px) {
