@@ -24,7 +24,15 @@ function fadeInSkills () {
   });
 }
 
+function scrollToSkills () {
+  $('.scroll-down-chevron').click(function(){
+    var aTag = $("#skills");
+    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+});
+}
+
 $(document).ready(function () {
   typed();
   fadeInSkills();
+  scrollToSkills();
 });
