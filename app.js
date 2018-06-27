@@ -28,11 +28,80 @@ function scrollToSkills () {
   $('.scroll-down-chevron').click(function(){
     var aTag = $("#skills");
     $('html,body').animate({scrollTop: aTag.offset().top},'slow');
-});
+  });
+}
+
+let experiences = [
+  'Agriculture',
+  'music composition',
+  'statistical analysis',
+  'Monte Carlo simulations',
+  'scientific research',
+  'Personal tutoring',
+  'Public speaking',
+  'Media buying',
+  'Content Creation',
+  'Paid Search Advertising',
+  'Film production',
+  'mentorship',
+  'International Advertising',
+  'Group instruction',
+  'Individual Selling',
+  'Marketing',
+  'App Installment Campaigns',
+  'Social Media Advertising',
+  'Web Development',
+  'Project Management',
+  'QA Testing',
+  'Excel Macros',
+  'Customer Service',
+  'Information Technology',
+  'Copy Writing',
+  'Campaign Budgeting',
+  'Product Launches',
+  'Documentation Writing',
+  'Business Strategy',
+  'Entrepreneurship',
+  'A/B Testing',
+  'Event Planning',
+  'Creative Writing',
+  'Design',
+  'Operations',
+  'Growth Hacking',
+  'Game Theory'];
+
+// Fisher-Yates Shuffle Algorithm
+function shuffle(array) {
+
+  let currentIndex = array.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
+function appendExperiencesOnScroll () {
+  const shuffledBills = shuffle(experiences);
+
+  for (let i = 0; i < shuffledBills.length; i++) {
+    $('.experience-in-list').append(`<li class="experience-in-list-item">${shuffledBills[i].toLowerCase()}<span class="bullet">&bull;</span></li>`);
+  }
 }
 
 $(document).ready(function () {
   typed();
   fadeInSkills();
   scrollToSkills();
+  appendExperiencesOnScroll();
 });

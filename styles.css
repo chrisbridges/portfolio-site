@@ -281,18 +281,50 @@ h2 {
 }
 
 #contact-me h2 {
-  color: var(--my-white);
+  color: var(--my-white-0);
 }
 
-#contact-me p {
-  color: var(--my-gray-2);
+/* #contact-me p {
+  color: var(--my-gray-1);
   margin-bottom: 40px;
-}
+} */
 
 .column-of-3 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+#about-me {
+  background-color: var(--my-white-0);
+}
+
+#about-me p {
+  color: var(--my-black);
+  margin-bottom: 30px;
+}
+
+.experience-in {
+  border: 2px solid var(--my-black);
+  background-color: var(--my-gray-1);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.experience-in-list-item {
+  list-style: none;
+  display: inline-block;
+  color: var(--my-gray-3);
+}
+
+.experience-in-list-item .bullet {
+  color: var(--my-gray-2);
+  margin: 0 2px 0 2px;
+}
+
+a[name="spotify-link"] {
+  text-decoration: none;
+  color: var(--my-blue);
 }
 
 @media only screen and (min-height: 550px) {
