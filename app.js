@@ -53,7 +53,7 @@ let experiences = [
   'Web Development',
   'Project Management',
   'QA Testing',
-  'Excel Macros',
+  'Excel',
   'Customer Service',
   'Information Technology',
   'Copy Writing',
@@ -68,7 +68,8 @@ let experiences = [
   'Design',
   'Operations',
   'Growth Hacking',
-  'Game Theory'];
+  'Game Theory',
+  'sales'];
 
 // Fisher-Yates Shuffle Algorithm
 function shuffle(array) {
