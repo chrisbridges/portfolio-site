@@ -208,6 +208,10 @@ h2 {
   fill: #1c78c0;
 }
 
+.npm {
+  padding-bottom: 20px;
+}
+
 .and-growing {
   text-align: center;
   margin-top: 20px;
@@ -322,7 +326,7 @@ h2 {
   margin: 0 2px 0 2px;
 }
 
-a[name="spotify-link"] {
+a[name="spotify-link"], .project-description a {
   text-decoration: none;
   color: var(--my-blue);
 }
