@@ -313,6 +313,7 @@ h2 {
   background-color: var(--my-gray-1);
   text-align: center;
   margin-bottom: 20px;
+  padding: 10px;
 }
 
 .experience-in-list-item {
