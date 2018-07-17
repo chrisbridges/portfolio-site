@@ -145,8 +145,8 @@ nav li {
 
 .contact-icon {
   color: var(--my-white);
-  /* text-align: center; */
   transition: 0.5s;
+  text-align: center;
 }
 
 .contact-icon:hover {
@@ -154,10 +154,6 @@ nav li {
 } 
 
 .scroll-down-chevron {
-  /* position: absolute;
-  left: 50%;
-  bottom: 2%;
-  transform: translate(-50%, 0); */
   text-align: center;
 }
 
