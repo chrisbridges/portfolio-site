@@ -329,7 +329,7 @@ a[name="spotify-link"], .project-description a {
   color: var(--my-blue);
 }
 
-@media only screen and (min-height: 550px) {
+@media only screen and (min-height: 600px) {
 
   #intro {
     height: 100vh;
@@ -340,6 +340,12 @@ a[name="spotify-link"], .project-description a {
     left: 50%;
     bottom: 2%;
     transform: translate(-50%, 0);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .bullet {
+    visibility: hidden;
   }
 }
 
