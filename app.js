@@ -24,12 +24,12 @@
 //   });
 // }
 
-// function scrollToSkills () {
-//   $('.scroll-down-chevron').click(function(){
-//     var aTag = $("#skills");
-//     $('html,body').animate({scrollTop: aTag.offset().top},'slow');
-//   });
-// }
+function scrollToSkills () {
+  $('.scroll-down-chevron').click(function(){
+    var aTag = $("#skills");
+    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+  });
+}
 
 let experiences = [
   'Agriculture',
@@ -113,7 +113,7 @@ function openMenu () {
 $(document).ready(function () {
   // typed();
   // fadeInSkills();
-  // scrollToSkills();
+  scrollToSkills();
   // appendExperiencesOnScroll();
   openMenu();
 });
