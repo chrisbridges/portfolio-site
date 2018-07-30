@@ -48,8 +48,11 @@ nav {
   width: 100%; */
   position: sticky;
   top: 0px;
+  background-color: white;
+}
 
-  background-color: var(--robinhood-green);
+nav a {
+  color: inherit;
 }
 
 .hamburger-menu {
@@ -58,6 +61,21 @@ nav {
   color: #888;
   display: flex;
   justify-content: flex-end;
+}
+
+.menu-options {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  text-align: center;
+  background-color: white;
+  width: 100%;
+  color: var(--robinhood-green);
+}
+
+.menu-options li {
+  margin: 10px;
 }
 
 .fa-bars {
@@ -115,10 +133,10 @@ nav ul li a {
   display: block;
   text-decoration: none;
 }
-
+/* 
 nav li {
   display: none;
-}
+} */
 
 #intro {
   
@@ -193,6 +211,8 @@ nav li {
   margin-bottom: 20px;
   padding-bottom: 5px;
   position: sticky;
+  /* background-color: var(--robinhood-green); */
+  /* color: white; */
   /* color: black; */
   /* text-align: center; */
   /* border-bottom: 2px var(--my-blue) solid; */
@@ -210,8 +230,7 @@ nav li {
   right: 0;
   display: block;
   z-index: 1;
-  /* background: #999;
-  color: #fff; */
+  /* background: var(--robinhood-green); */
   padding: 18px 0 0 0;
 }
 
@@ -339,8 +358,8 @@ nav li {
 }
 
 #about-me {
-  background-color: var(--robinhood-green);
-  color: white;
+  /* background-color: var(--robinhood-green); */
+  /* color: white; */
 }
 
 #about-me p {
