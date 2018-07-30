@@ -16,6 +16,8 @@ html,body {
   --my-gray-2: #afb2b7;
   --my-gray-3: #7f8084;
   --my-blue: #5e92c9;
+  --robinhood-green: #21ce99;
+  --robinhood-orange: #f45531;
 }
 
 * {
@@ -41,19 +43,34 @@ body {
   margin-bottom: 10px;
 }
 
+nav {
+  /* height: 60px;
+  width: 100%; */
+  position: sticky;
+  top: 0px;
+
+  background-color: var(--robinhood-green);
+}
+
 .hamburger-menu {
-  position: fixed;
-  top: 1%;
-  left: 2%;
-  border-radius: 10%;
-  background-color: var(--my-gray-3);
-  padding: 5px 10px;
+  /* position: sticky; */
+  /* top: 40px; */
+  color: #888;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.fa-bars {
+  margin: 12px 15px;
+  padding: 10px 12px;
+  background-color: var(--my-gray-1);
+  border-radius: 5px;
 }
 
 header h1 {
   font-size: 50px;
   margin-bottom: 20px;
-  border-bottom: 2px var(--my-blue) solid;
+  border-bottom: 2px var(--robinhood-green) solid;
   padding-bottom: 10px;
 }
 
@@ -104,9 +121,15 @@ nav li {
 }
 
 #intro {
-  background-color: var(--my-black);
+  
+  background-color: white;
+  color: black;
   /* height: 100vh; */
   /* overflow-y: scroll; */
+}
+
+#intro .padded-div {
+  padding-top: 0;
 }
 
 #intro .hello {
@@ -114,11 +137,11 @@ nav li {
 }
 
 #intro h1 {
-  color: var(--my-white);
+  /* color: var(--my-white); */
 }
 
 #intro .intro-text {
-  color: var(--my-gray-1);
+  /* color: var(--my-gray-1); */
   margin-bottom: 25px;
   font-size: 17px;
 }
@@ -144,7 +167,7 @@ nav li {
 }
 
 .contact-icon {
-  color: var(--my-white);
+  color: black;
   transition: 0.5s;
   text-align: center;
 }
@@ -162,15 +185,34 @@ nav li {
 }
 
 #skills {
-  background-color: var(--my-white-0);
+  /* background-color: var(--my-white-0); */
   color: var(--my-black);
 }
 
-h2 {
+.section-head {
   margin-bottom: 20px;
   padding-bottom: 5px;
-  border-bottom: 2px var(--my-blue) solid;
+  position: sticky;
+  /* color: black; */
+  /* text-align: center; */
+  /* border-bottom: 2px var(--my-blue) solid; */
   /* text-decoration: underline; */
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -o-sticky;
+  position: -ms-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  z-index: 1;
+  /* background: #999;
+  color: #fff; */
+  padding: 18px 0 0 0;
 }
 
 #skills .primary-strength {
@@ -297,11 +339,12 @@ h2 {
 }
 
 #about-me {
-  background-color: var(--my-white-0);
+  background-color: var(--robinhood-green);
+  color: white;
 }
 
 #about-me p {
-  color: var(--my-black);
+  /* color: var(--my-black); */
   margin-bottom: 30px;
 }
 
@@ -331,9 +374,9 @@ a[name="spotify-link"], .project-description a {
 
 @media only screen and (min-height: 600px) {
 
-  #intro {
+  /* #intro {
     height: 100vh;
-  }
+  } */
 
   .scroll-down-chevron {
     position: absolute;
