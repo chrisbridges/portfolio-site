@@ -1,28 +1,28 @@
-// function typed () {
-//   const options = {
-//   strings: ['programmer', 'leader', 'musician', 'marketer', 'mentor', 'analyst', 'problem solver'],
-//   typeSpeed: 50,
-//   showCursor: true,
-//   backDelay: 1000,
-//   smartBackspace: false
-// }
-//   const typed = new Typed("#i-am-a-list", options);
-// }
+function typed () {
+  const options = {
+  strings: ['programmer', 'leader', 'musician', 'marketer', 'mentor', 'analyst', 'problem solver'],
+  typeSpeed: 50,
+  showCursor: true,
+  backDelay: 1000,
+  smartBackspace: false
+}
+  const typed = new Typed("#i-am-a-list", options);
+}
 
-// function fadeInSkills () {
-//   /* Every time the window is scrolled ... */
-//   $(window).scroll( function(){
-//     /* Check the location of each desired element */
-//     $('.tech-skills-icon').each( function(i){
-//       var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-//       var bottom_of_window = $(window).scrollTop() + $(window).height();
-//       /* If the object is completely visible in the window, fade it it */
-//       if (bottom_of_window > bottom_of_object) {
-//         $(this).animate({'opacity':'1'},4000);  
-//       }
-//     }); 
-//   });
-// }
+function fadeInSkills () {
+  /* Every time the window is scrolled ... */
+  $(window).scroll( function(){
+    /* Check the location of each desired element */
+    $('.tech-skills-icon').each( function(i){
+      var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+      var bottom_of_window = $(window).scrollTop() + $(window).height();
+      /* If the object is completely visible in the window, fade it it */
+      if (bottom_of_window > bottom_of_object) {
+        $(this).animate({'opacity':'1'},4000);  
+      }
+    }); 
+  });
+}
 
 function scrollToSkills () {
   $('.scroll-down-chevron').click(function(){
@@ -72,33 +72,33 @@ let experiences = [
   'sales'];
 
 // Fisher-Yates Shuffle Algorithm
-// function shuffle(array) {
+function shuffle(array) {
 
-//   let currentIndex = array.length, temporaryValue, randomIndex;
+  let currentIndex = array.length, temporaryValue, randomIndex;
 
-//   // While there remain elements to shuffle...
-//   while (0 !== currentIndex) {
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
 
-//     // Pick a remaining element...
-//     randomIndex = Math.floor(Math.random() * currentIndex);
-//     currentIndex -= 1;
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
 
-//     // And swap it with the current element.
-//     temporaryValue = array[currentIndex];
-//     array[currentIndex] = array[randomIndex];
-//     array[randomIndex] = temporaryValue;
-//   }
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
 
-//   return array;
-// }
+  return array;
+}
 
-// function appendExperiencesOnScroll () {
-//   const shuffledBills = shuffle(experiences);
+function appendExperiencesOnScroll () {
+  const shuffledBills = shuffle(experiences);
 
-//   for (let i = 0; i < shuffledBills.length; i++) {
-//     $('.experience-in-list').append(`<li class="experience-in-list-item">${shuffledBills[i].toLowerCase()}<span class="bullet">&bull;</span></li>`);
-//   }
-// }
+  for (let i = 0; i < shuffledBills.length; i++) {
+    $('.experience-in-list').append(`<li class="experience-in-list-item">${shuffledBills[i].toLowerCase()}<span class="bullet">&bull;</span></li>`);
+  }
+}
 
 function openMenu () {
   $('.hamburger-menu').click(function () {
@@ -112,8 +112,8 @@ function openMenu () {
 
 $(document).ready(function () {
   // typed();
-  // fadeInSkills();
+  fadeInSkills();
   scrollToSkills();
-  // appendExperiencesOnScroll();
+  appendExperiencesOnScroll();
   openMenu();
 });
