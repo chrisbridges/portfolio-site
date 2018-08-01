@@ -409,8 +409,10 @@ nav li {
 }
 
 #about-me {
-  background-color: var(--robinhood-green);
+  /* background-color: var(--robinhood-green); */
   color: white;
+  background: url(https://i.imgur.com/YRrui05.jpg) no-repeat center center fixed;
+  box-shadow: inset 0 0 0 100vmax rgba(33, 206, 153, .6);
 }
 
 #about-me p {
