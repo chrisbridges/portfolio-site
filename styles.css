@@ -117,8 +117,7 @@ header h1 {
 }
 
 .bold-text-black {
-  font-weight: bold;
-  color: var(--my-black);
+  text-decoration: underline;
 }
 
 nav ul {
@@ -262,6 +261,7 @@ nav li {
   margin-bottom: 20px;
   padding-bottom: 5px;
   position: sticky;
+  font-weight: bolder;
   /* background-color: var(--robinhood-green); */
   /* color: white; */
   /* color: black; */
@@ -409,8 +409,8 @@ nav li {
 }
 
 #about-me {
-  /* background-color: var(--robinhood-green); */
-  /* color: white; */
+  background-color: var(--robinhood-green);
+  color: white;
 }
 
 #about-me p {

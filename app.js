@@ -24,8 +24,10 @@ function fadeInSkills () {
   });
 }
 
+// TODO: probably fix this to scroll to 'My Story' instead
+
 function scrollToSkills () {
-  $('.scroll-down-chevron').click(function(){
+  $('.get-started').click(function(){
     var aTag = $("#skills");
     $('html,body').animate({scrollTop: aTag.offset().top},'slow');
   });
@@ -109,6 +111,8 @@ function openMenu () {
     }
   });
 }
+
+// TODO: create func where if menu is open, and click is outside menu, close menu
 
 $(document).ready(function () {
   // typed();
