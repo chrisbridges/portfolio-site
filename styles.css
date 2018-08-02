@@ -647,3 +647,14 @@ nav li {
   }
 
 }
+/* target iOS devices specifically for background image fixed solution */
+@supports (-webkit-overflow-scrolling: touch) {
+  /* CSS specific to iOS devices */ 
+  #about-me {
+    background: url(https://i.imgur.com/YRrui05.jpg) no-repeat center center;
+  }
+
+  #references {
+    background: url(https://i.imgur.com/2D0mBXr.jpg) no-repeat center center fixed;
+  }
+}
