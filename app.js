@@ -24,7 +24,7 @@ function fadeInSkills () {
   });
 }
 
-// TODO: probably fix this to scroll to 'My Story' instead
+// TODO: make more dynamic for all section links
 
 function scrollToMyStory () {
   $('.get-started').click(function(){
@@ -113,17 +113,19 @@ function openMenu () {
   });
 }
 
-// function changeMyStoryColor () {
-//   $(window).on("scroll", function() {
-//     console.log($('#about-me').scrollTop());
-//     if($('#about-me').scrollTop() > 50) {
-//         $("#my-story").addClass("active");
-//     } else {
-//         //remove the background property so it comes transparent again (defined in your css)
-//        $("#my-story").removeClass("active");
-//     }
-//   });
-// }
+function changeMyStoryColor () {
+  $(window).on("scroll", function() {
+    var aboutMeHeaderPosition = $('#about-me').offset().top;
+    console.log($(window).scrollTop());
+    if ($(window).scrollTop() > aboutMeHeaderPosition) {
+        $("#about-me h2").addClass("active");
+        console.log('active');
+    } else {
+        //remove the background property so it comes transparent again (defined in your css)
+       $("#about-me h2").removeClass("active");
+    }
+  });
+}
 // TODO: create func where if menu is open, and click is outside menu, close menu
 
 $(document).ready(function () {
@@ -132,5 +134,5 @@ $(document).ready(function () {
   scrollToMyStory();
   appendExperiencesOnScroll();
   openMenu();
-  // changeMyStoryColor();
+  changeMyStoryColor();
 });
