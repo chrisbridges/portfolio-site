@@ -555,7 +555,20 @@ nav li {
 
   .experience-education .padded-div {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+  }
+
+  .education-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* margin: 0 50px 0 50px; */
+  }
+
+  .school img {
+    height: 80%;
+    max-height: 300px;
+    width: auto;
   }
 
 }
