@@ -48,10 +48,14 @@ function menuNavigation () {
   $('.menu-options ul li').on('click', function (e) {
     e.preventDefault();
     let navigateTo = $(e.currentTarget).text();
-    console.log();
     let aTag = $(menuHash[navigateTo]);
     let headerPadding = 18;
-    $('html,body').animate({scrollTop: aTag.offset().top + headerPadding},'slow');
+    console.log(navigateTo);
+    if (navigateTo === "Home") {
+      $('html,body').animate({scrollTop: 0},'slow');
+    } else {
+      $('html,body').animate({scrollTop: aTag.offset().top + headerPadding},'slow');
+    }
   });
 }
 
