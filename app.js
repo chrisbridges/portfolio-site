@@ -112,6 +112,17 @@ function openMenu () {
   });
 }
 
+// function changeMyStoryColor () {
+//   $(window).on("scroll", function() {
+//     console.log($('#about-me').scrollTop());
+//     if($('#about-me').scrollTop() > 50) {
+//         $("#my-story").addClass("active");
+//     } else {
+//         //remove the background property so it comes transparent again (defined in your css)
+//        $("#my-story").removeClass("active");
+//     }
+//   });
+// }
 // TODO: create func where if menu is open, and click is outside menu, close menu
 
 $(document).ready(function () {
@@ -120,4 +131,5 @@ $(document).ready(function () {
   scrollToSkills();
   appendExperiencesOnScroll();
   openMenu();
+  // changeMyStoryColor();
 });

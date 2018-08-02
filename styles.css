@@ -94,7 +94,7 @@ header h1 {
 }
 
 .i-am-a {
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
 }
 
 .i-am-a h3 {
@@ -107,8 +107,12 @@ header h1 {
 }
 
 #i-am-a-list, .typed-cursor {
-  color: var(--my-blue);
-  font-size: 30px;
+  /* color: var(--robinhood-green); */
+  font-size: inherit;
+}
+
+.typed-cursor {
+  visibility: hidden;
 }
 
 .bold-text {
@@ -406,6 +410,10 @@ nav li {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+.active {
+  color: black;
 }
 
 #about-me {
