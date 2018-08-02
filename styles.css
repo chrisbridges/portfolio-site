@@ -18,6 +18,7 @@ html,body {
   --my-blue: #5e92c9;
   --robinhood-green: #21ce99;
   --robinhood-orange: #f45531;
+  --robinhood-gray: #f5f7fa;
 }
 
 * {
@@ -337,8 +338,9 @@ nav li {
 }
 
 #projects {
-  background-color: var(--my-white);
-  color: var(--my-black);
+  /* background-color: var(--my-white); */
+  /* color: var(--my-black); */
+  background-color: var(--robinhood-gray);
 }
 
 .project {
