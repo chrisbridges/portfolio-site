@@ -185,13 +185,16 @@ nav li {
 }
 
 .contact-icon {
-  color: black;
+  color: var(--robinhood-green);
   transition: 0.5s;
   text-align: center;
+  height: 100%;
+  max-height: 150px;
+  width: auto;
 }
 
 .contact-icon:hover {
-  color: var(--my-blue);
+  color: var(--robinhood-gray);
 } 
 
 .scroll-down-chevron {
