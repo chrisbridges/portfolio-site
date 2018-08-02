@@ -26,10 +26,11 @@ function fadeInSkills () {
 
 // TODO: probably fix this to scroll to 'My Story' instead
 
-function scrollToSkills () {
+function scrollToMyStory () {
   $('.get-started').click(function(){
-    var aTag = $("#skills");
-    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+    var aTag = $("#about-me");
+    var headerPadding = 18;
+    $('html,body').animate({scrollTop: aTag.offset().top + headerPadding},'slow');
   });
 }
 
@@ -128,7 +129,7 @@ function openMenu () {
 $(document).ready(function () {
   // typed();
   fadeInSkills();
-  scrollToSkills();
+  scrollToMyStory();
   appendExperiencesOnScroll();
   openMenu();
   // changeMyStoryColor();
