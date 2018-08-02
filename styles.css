@@ -35,6 +35,11 @@ body {
   margin: 0 auto;
 }
 
+.nav-padded-div {
+  max-width: 1000px;
+  /* margin: 0 auto; */
+}
+
 .hello {
   margin-bottom: 10px;
 }
@@ -57,6 +62,7 @@ nav a {
   color: #888;
   display: flex;
   justify-content: flex-end;
+  cursor: pointer;
 }
 
 .menu-options {
@@ -73,6 +79,10 @@ nav a {
 
 .menu-options li {
   margin: 20px;
+}
+
+.menu-options li:hover {
+  cursor: pointer;
 }
 
 .fa-bars {
@@ -267,7 +277,7 @@ nav li {
 }
 
 .section-head {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   padding-bottom: 5px;
   position: sticky;
   font-weight: bolder;
@@ -343,7 +353,9 @@ nav li {
 #projects {
   /* background-color: var(--my-white); */
   /* color: var(--my-black); */
-  background-color: var(--robinhood-gray);
+  /* background-color: var(--robinhood-gray); */
+  /* background: url(https://i.imgur.com/4QJbO8F.jpg) no-repeat center center fixed; */
+  box-shadow: inset 0 0 0 100vmax rgba(245, 247, 250, .95);
 }
 
 .project {
@@ -537,7 +549,7 @@ nav li {
 }
 
 #linkedin-endorsements {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 @media only screen and (min-height: 600px) {

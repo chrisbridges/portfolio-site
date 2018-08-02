@@ -26,7 +26,7 @@ function fadeInSkills () {
 
 // TODO: make more dynamic for all section links
 
-function scrollToMyStory () {
+function getStartedClick () {
   $('.get-started').click(function(){
     let aTag = $("#about-me");
     let headerPadding = 18;
@@ -145,7 +145,7 @@ function changeReferencesColor () {
 $(document).ready(function () {
   // typed();
   fadeInSkills();
-  scrollToMyStory();
+  getStartedClick();
   appendExperiencesOnScroll();
   openMenu();
   changeMyStoryColor();
