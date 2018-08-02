@@ -459,12 +459,12 @@ nav li {
 
 .project-description a {
   text-decoration: none;
-  color: var(--robinhood-orange);
+  color: var(--robinhood-green);
   transition: 0.5s;
 }
 
 .project-description a:hover {
-  color: var(--robinhood-green);
+  color: var(--robinhood-orange);
 }
 
 .project-image {
@@ -478,12 +478,12 @@ nav li {
   justify-content: space-between;
 }
 
-.companies-list {
+.companies-list, .education-list {
   text-align: center;
 }
 
 .company-logo, .school {
-  margin: 5px auto;
+  /* margin: 5px auto; */
 }
 
 .company-logo img {
@@ -551,6 +551,11 @@ nav li {
 
   #contact-me .contact-icons {
     margin-bottom: 50px;
+  }
+
+  .experience-education .padded-div {
+    display: flex;
+    justify-content: space-between;
   }
 
 }
