@@ -34,6 +34,27 @@ function getStartedClick () {
   });
 }
 
+function menuNavigation () {
+  const menuHash = {
+    "Home": "#intro",
+    "My Story": "#about-me",
+    "Skills": "#skills",
+    "Projects": "#projects",
+    "Experience & Education": "#experience-and-education",
+    "References": "#references",
+    "Get in Touch": "#contact-me"
+  };
+
+  $('.menu-options ul li').on('click', function (e) {
+    e.preventDefault();
+    let navigateTo = $(e.currentTarget).text();
+    console.log();
+    let aTag = $(menuHash[navigateTo]);
+    let headerPadding = 18;
+    $('html,body').animate({scrollTop: aTag.offset().top + headerPadding},'slow');
+  });
+}
+
 let experiences = [
   'Agriculture',
   'music composition',
@@ -146,6 +167,7 @@ $(document).ready(function () {
   // typed();
   fadeInSkills();
   getStartedClick();
+  menuNavigation();
   appendExperiencesOnScroll();
   openMenu();
   changeMyStoryColor();
