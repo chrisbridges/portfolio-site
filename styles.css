@@ -257,8 +257,9 @@ nav li {
 }
 
 #skills {
-  /* background-color: var(--my-white-0); */
-  color: var(--my-black);
+  /* background-color: black; */
+  color: black;
+  /* color: white; */
 }
 
 .section-head {
@@ -291,6 +292,10 @@ nav li {
 
 #skills .primary-strength {
   margin-bottom: 20px;
+}
+
+.tech-skills-icons {
+  text-align: center;
 }
 
 .tech-skills-icon {

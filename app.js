@@ -116,10 +116,10 @@ function openMenu () {
 function changeMyStoryColor () {
   $(window).on("scroll", function() {
     var aboutMeHeaderPosition = $('#about-me').offset().top;
-    console.log($(window).scrollTop());
+    // console.log($(window).scrollTop());
     if ($(window).scrollTop() > aboutMeHeaderPosition) {
         $("#about-me h2").addClass("active");
-        console.log('active');
+        // console.log('active');
     } else {
         //remove the background property so it comes transparent again (defined in your css)
        $("#about-me h2").removeClass("active");
