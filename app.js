@@ -28,8 +28,8 @@ function fadeInSkills () {
 
 function scrollToMyStory () {
   $('.get-started').click(function(){
-    var aTag = $("#about-me");
-    var headerPadding = 18;
+    let aTag = $("#about-me");
+    let headerPadding = 18;
     $('html,body').animate({scrollTop: aTag.offset().top + headerPadding},'slow');
   });
 }
