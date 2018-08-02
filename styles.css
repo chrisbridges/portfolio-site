@@ -478,10 +478,11 @@ nav li {
   list-style: none;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 
-.companies-list, .education-list {
+.companies-list {
   text-align: center;
 }
 
@@ -533,6 +534,10 @@ nav li {
 .testimonial, .testimonial h4, #references p {
   margin-bottom: 20px;
   text-align: center;
+}
+
+#linkedin-endorsements {
+  margin-top: 50px;
 }
 
 @media only screen and (min-height: 600px) {
@@ -596,6 +601,7 @@ nav li {
   }
 
   .education-list {
+    /* text-align: initial !important; */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -603,9 +609,7 @@ nav li {
   }
 
   .school img {
-    height: 80%;
-    max-height: 300px;
-    width: auto;
+    max-height: 200px;
   }
 
   .testimonials h2 {

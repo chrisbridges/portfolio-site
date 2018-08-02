@@ -126,6 +126,20 @@ function changeMyStoryColor () {
     }
   });
 }
+
+function changeReferencesColor () {
+  $(window).on("scroll", function() {
+    let referencesHeaderPosition = $('#references').offset().top;
+    // console.log($(window).scrollTop());
+    if ($(window).scrollTop() > referencesHeaderPosition) {
+        $("#references h2").addClass("active");
+        // console.log('active');
+    } else {
+        //remove the background property so it comes transparent again (defined in your css)
+       $("#references h2").removeClass("active");
+    }
+  });
+}
 // TODO: create func where if menu is open, and click is outside menu, close menu
 
 $(document).ready(function () {
@@ -135,4 +149,5 @@ $(document).ready(function () {
   appendExperiencesOnScroll();
   openMenu();
   changeMyStoryColor();
+  changeReferencesColor();
 });
