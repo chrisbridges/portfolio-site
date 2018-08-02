@@ -24,10 +24,34 @@ function fadeInSkills () {
   });
 }
 
-function scrollToSkills () {
-  $('.scroll-down-chevron').click(function(){
-    var aTag = $("#skills");
-    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+// TODO: make more dynamic for all section links
+
+function getStartedClick () {
+  $('.get-started').click(function(){
+    let aTag = $("#about-me");
+    let headerPadding = 18;
+    $('html,body').animate({scrollTop: aTag.offset().top + headerPadding},'slow');
+  });
+}
+
+function menuNavigation () {
+  const menuHash = {
+    "Home": "#intro",
+    "My Story": "#about-me",
+    "Skills": "#skills",
+    "Projects": "#projects",
+    "Experience & Education": "#experience-and-education",
+    "References": "#references",
+    "Get in Touch": "#contact-me"
+  };
+
+  $('.menu-options ul li').on('click', function (e) {
+    e.preventDefault();
+    let navigateTo = $(e.currentTarget).text();
+    console.log();
+    let aTag = $(menuHash[navigateTo]);
+    let headerPadding = 18;
+    $('html,body').animate({scrollTop: aTag.offset().top + headerPadding},'slow');
   });
 }
 
@@ -100,9 +124,52 @@ function appendExperiencesOnScroll () {
   }
 }
 
+function openMenu () {
+  $('.hamburger-menu').click(function () {
+    if ($('.menu-options').is(':hidden')) {
+      $('.menu-options').slideDown();
+    } else {
+      $('.menu-options').slideUp();
+    }
+  });
+}
+
+function changeMyStoryColor () {
+  $(window).on("scroll", function() {
+    var aboutMeHeaderPosition = $('#about-me').offset().top;
+    // console.log($(window).scrollTop());
+    if ($(window).scrollTop() > aboutMeHeaderPosition) {
+        $("#about-me h2").addClass("active");
+        // console.log('active');
+    } else {
+        //remove the background property so it comes transparent again (defined in your css)
+       $("#about-me h2").removeClass("active");
+    }
+  });
+}
+
+function changeReferencesColor () {
+  $(window).on("scroll", function() {
+    let referencesHeaderPosition = $('#references').offset().top;
+    // console.log($(window).scrollTop());
+    if ($(window).scrollTop() > referencesHeaderPosition) {
+        $("#references h2").addClass("active");
+        // console.log('active');
+    } else {
+        //remove the background property so it comes transparent again (defined in your css)
+       $("#references h2").removeClass("active");
+    }
+  });
+}
+// TODO: create func where if menu is open, and click is outside menu, close menu
+
 $(document).ready(function () {
-  typed();
+  // typed();
   fadeInSkills();
-  scrollToSkills();
+  getStartedClick();
+  menuNavigation();
   appendExperiencesOnScroll();
+  openMenu();
+  changeMyStoryColor();
+  changeReferencesColor();
 });
