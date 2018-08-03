@@ -371,7 +371,7 @@ nav li {
   display: flex;
   justify-content: flex-start;
   font-style: italic;
-  color: var(--my-black);
+  border-bottom: 1px solid var(--my-gray-1);
 }
 
 .project-image {
@@ -379,6 +379,10 @@ nav li {
   margin: 0 auto;
   max-width: 500px;
 }
+/* make it so there's a color overlay when hovering over a project thumbnail? */
+/* .project-image:hover {
+  box-shadow: inset 0 0 0 100vmax rgba(33, 206, 153, .7);
+} */
 
 .project-image img {
   width: 100%;
