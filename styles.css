@@ -506,10 +506,6 @@ nav li {
   text-align: center;
 }
 
-.company-logo, .school {
-  /* margin: 5px auto; */
-}
-
 .company-logo img {
   width: 80%;
   max-width: 400px;
