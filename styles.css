@@ -640,7 +640,6 @@ nav li {
 
   .testimonial-row {
     display: flex;
-    /* flex-direction: row; */
     justify-content: space-around;
   }
 
