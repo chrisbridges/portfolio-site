@@ -1,13 +1,3 @@
-function typed () {
-  const options = {
-  strings: ['programmer', 'leader', 'musician', 'marketer', 'mentor', 'analyst', 'problem solver'],
-  typeSpeed: 50,
-  showCursor: true,
-  backDelay: 1000,
-  smartBackspace: false
-}
-  const typed = new Typed("#i-am-a-list", options);
-}
 
 function fadeInSkills () {
   /* Every time the window is scrolled ... */
@@ -16,7 +6,7 @@ function fadeInSkills () {
     $('.tech-skills-icon').each( function(i){
       var bottom_of_object = $(this).offset().top + $(this).outerHeight();
       var bottom_of_window = $(window).scrollTop() + $(window).height();
-      /* If the object is completely visible in the window, fade it it */
+      /* If the object is completely visible in the window, fade it in */
       if (bottom_of_window > bottom_of_object) {
         $(this).animate({'opacity':'1'},4000);  
       }
@@ -24,11 +14,10 @@ function fadeInSkills () {
   });
 }
 
-// TODO: make more dynamic for all section links
-
 function getStartedClick () {
   $('.get-started').click(function(){
     let aTag = $("#about-me");
+    // headerPadding value chosen because it seemed to look best
     let headerPadding = 18;
     $('html,body').animate({scrollTop: aTag.offset().top + headerPadding},'slow');
   });
@@ -52,6 +41,7 @@ function menuNavigation () {
     let headerPadding = 18;
     console.log(navigateTo);
     if (navigateTo === "Home") {
+      // if navigating home, provide no padding-top
       $('html,body').animate({scrollTop: 0},'slow');
     } else {
       $('html,body').animate({scrollTop: aTag.offset().top + headerPadding},'slow');
@@ -59,74 +49,7 @@ function menuNavigation () {
   });
 }
 
-let experiences = [
-  'Agriculture',
-  'music composition',
-  'statistical analysis',
-  'Monte Carlo simulations',
-  'scientific research',
-  'Personal tutoring',
-  'Public speaking',
-  'Media buying',
-  'Content Creation',
-  'Paid Search Advertising',
-  'Film production',
-  'mentorship',
-  'International Advertising',
-  'Group instruction',
-  'Individual Selling',
-  'Marketing',
-  'App Installment Campaigns',
-  'Social Media Advertising',
-  'Web Development',
-  'Project Management',
-  'QA Testing',
-  'Excel',
-  'Customer Service',
-  'Information Technology',
-  'Copy Writing',
-  'Campaign Budgeting',
-  'Product Launches',
-  'Documentation Writing',
-  'Business Strategy',
-  'Entrepreneurship',
-  'A/B Testing',
-  'Event Planning',
-  'Creative Writing',
-  'Design',
-  'Operations',
-  'Growth Hacking',
-  'Game Theory',
-  'sales'];
-
-// Fisher-Yates Shuffle Algorithm
-function shuffle(array) {
-
-  let currentIndex = array.length, temporaryValue, randomIndex;
-
-  // While there remain elements to shuffle...
-  while (0 !== currentIndex) {
-
-    // Pick a remaining element...
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex -= 1;
-
-    // And swap it with the current element.
-    temporaryValue = array[currentIndex];
-    array[currentIndex] = array[randomIndex];
-    array[randomIndex] = temporaryValue;
-  }
-
-  return array;
-}
-
-function appendExperiencesOnScroll () {
-  const shuffledBills = shuffle(experiences);
-
-  for (let i = 0; i < shuffledBills.length; i++) {
-    $('.experience-in-list').append(`<li class="experience-in-list-item">${shuffledBills[i].toLowerCase()}<span class="bullet">&bull;</span></li>`);
-  }
-}
+// TODO: create func where if menu is open, and click is outside menu, close menu
 
 function openMenu () {
   $('.hamburger-menu').click(function () {
@@ -138,13 +61,13 @@ function openMenu () {
   });
 }
 
+// font-color of 'My Story' section header is originally white
+  // change to black on scroll so it's visible against white sticky heading
 function changeMyStoryColor () {
   $(window).on("scroll", function() {
     var aboutMeHeaderPosition = $('#about-me').offset().top;
-    // console.log($(window).scrollTop());
     if ($(window).scrollTop() > aboutMeHeaderPosition) {
         $("#about-me h2").addClass("active");
-        // console.log('active');
     } else {
         //remove the background property so it comes transparent again (defined in your css)
        $("#about-me h2").removeClass("active");
@@ -165,14 +88,11 @@ function changeReferencesColor () {
     }
   });
 }
-// TODO: create func where if menu is open, and click is outside menu, close menu
 
 $(document).ready(function () {
-  // typed();
   fadeInSkills();
   getStartedClick();
   menuNavigation();
-  appendExperiencesOnScroll();
   openMenu();
   changeMyStoryColor();
   changeReferencesColor();
