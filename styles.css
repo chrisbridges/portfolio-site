@@ -257,10 +257,6 @@ nav ul li a {
   background-repeat: no-repeat;
 }
 
-/* .stack-dont-kill-my-flow img {
-	position: absolute;
-} */
-
 .stack-before {
 	animation-name: fade;
 	animation-timing-function: ease-in-out;
@@ -290,8 +286,6 @@ nav ul li a {
 }
 
 .left-chevron, .right-chevron {
-  /* font-size: 20px; */
-  /* font-weight: bold; */
   display: inline-block;
   margin: 0 2px 0 2px;
   color: var(--my-black);
@@ -474,23 +468,6 @@ nav ul li a {
 
 }
 
-@media only screen and (min-width: 800px) {
-  .project-flex {
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-between; */
-  }
-
-  /* .project-image {
-    display: block;
-    width: auto;
-    height: 100%;
-  }
-
-  .project-description {
-    width: 35%;
-  } */
-}
 /* target iOS devices specifically for background image fixed solution */
 @supports (-webkit-overflow-scrolling: touch) {
   /* CSS specific to iOS devices */ 
