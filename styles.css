@@ -247,8 +247,41 @@ nav ul li a {
 }
 
 .project-image {
-  /* margin: 0 auto; */
+  margin: 0 auto;
   /* max-width: 500px; */
+}
+
+.stack-dont-kill-my-flow {
+  background-image: url('./img/after.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+/* .stack-dont-kill-my-flow img {
+	position: absolute;
+} */
+
+.stack-before {
+	animation-name: fade;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 3s;
+	animation-direction: alternate;
+}
+
+@keyframes fade {
+	0% {
+		opacity: 1;
+	}
+	25% {
+		opacity: 1;
+	}
+	75% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
 }
 
 .project-image img, .project-image video {
@@ -257,8 +290,8 @@ nav ul li a {
 }
 
 .left-chevron, .right-chevron {
-  font-size: 20px;
-  font-weight: bold;
+  /* font-size: 20px; */
+  /* font-weight: bold; */
   display: inline-block;
   margin: 0 2px 0 2px;
   color: var(--my-black);
