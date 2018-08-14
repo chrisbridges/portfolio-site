@@ -39,7 +39,6 @@ function menuNavigation () {
     let navigateTo = $(e.currentTarget).text();
     let aTag = $(menuHash[navigateTo]);
     let headerPadding = 18;
-    console.log(navigateTo);
     if (navigateTo === "Home") {
       // if navigating home, provide no padding-top
       $('html,body').animate({scrollTop: 0},'slow');
@@ -78,10 +77,8 @@ function changeMyStoryColor () {
 function changeReferencesColor () {
   $(window).on("scroll", function() {
     let referencesHeaderPosition = $('#references').offset().top;
-    // console.log($(window).scrollTop());
     if ($(window).scrollTop() > referencesHeaderPosition) {
         $("#references h2").addClass("active");
-        // console.log('active');
     } else {
         //remove the background property so it comes transparent again (defined in your css)
        $("#references h2").removeClass("active");

@@ -100,6 +100,7 @@ header h1 {
 
 .intro-text h2 {
   font-size: 40px;
+  font-weight: 300;
 }
 
 nav ul {
@@ -247,17 +248,50 @@ nav ul li a {
 
 .project-image {
   margin: 0 auto;
-  max-width: 500px;
+  /* max-width: 500px; */
 }
 
-.project-image img {
+.stack-dont-kill-my-flow {
+  background-image: url('./img/after.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+/* .stack-dont-kill-my-flow img {
+	position: absolute;
+} */
+
+.stack-before {
+	animation-name: fade;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 3s;
+	animation-direction: alternate;
+}
+
+@keyframes fade {
+	0% {
+		opacity: 1;
+	}
+	25% {
+		opacity: 1;
+	}
+	75% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.project-image img, .project-image video {
   width: 100%;
   height: auto;
 }
 
 .left-chevron, .right-chevron {
-  font-size: 20px;
-  font-weight: bold;
+  /* font-size: 20px; */
+  /* font-weight: bold; */
   display: inline-block;
   margin: 0 2px 0 2px;
   color: var(--my-black);
@@ -438,6 +472,24 @@ nav ul li a {
     padding: 0 20px;
   }
 
+}
+
+@media only screen and (min-width: 800px) {
+  .project-flex {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between; */
+  }
+
+  /* .project-image {
+    display: block;
+    width: auto;
+    height: 100%;
+  }
+
+  .project-description {
+    width: 35%;
+  } */
 }
 /* target iOS devices specifically for background image fixed solution */
 @supports (-webkit-overflow-scrolling: touch) {
