@@ -304,11 +304,6 @@ nav ul li a {
   display: inline-block;
 }
 
-.contact-icons .bullet {
-  display: flex;
-  align-items: center;
-}
-
 .project-description p {
   font-weight: 100;
   font-size: 14px;
