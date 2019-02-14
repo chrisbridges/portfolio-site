@@ -1,5 +1,5 @@
 /* CSS reset */
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
   margin:0;
   padding:0;
 }
@@ -249,7 +249,6 @@ nav ul li a {
 
 .project-image {
   margin: 0 auto;
-  /* max-width: 500px; */
 }
 
 .stack-dont-kill-my-flow {
@@ -466,7 +465,7 @@ nav ul li a {
 
 /* target iOS devices specifically for background image fixed solution */
 @supports (-webkit-overflow-scrolling: touch) {
-  /* CSS specific to iOS devices */ 
+  /* CSS specific to iOS devices */
   #about-me {
     background: url(https://i.imgur.com/YRrui05.jpg) no-repeat center center;
   }
