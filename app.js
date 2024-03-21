@@ -30,8 +30,13 @@ function menuNavigation () {
     "Skills": "#skills",
     "Projects": "#projects",
     "Experience & Education": "#experience-and-education",
+<<<<<<< Updated upstream
     "References": "#references",
     "Get in Touch": "#contact-me"
+=======
+    References: "#references",
+    Contact: "#contact-me",
+>>>>>>> Stashed changes
   };
 
   $('.menu-options ul li').on('click', function (e) {
