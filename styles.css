@@ -151,8 +151,14 @@ nav ul li a {
   color: var(--robinhood-gray);
 }
 
-.get-started {
-  margin-top: 10em;
+.intro-button-container {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.intro-button {
   cursor: pointer;
   background-color: var(--robinhood-green);
   border: 0;
@@ -162,6 +168,9 @@ nav ul li a {
   font-weight: 700;
   letter-spacing: .1em;
   transition: all .3s;
+  margin-bottom: 1rem;
+  max-width: 8rem;
+  margin-right: 5rem;
 }
 
 .section-head {
@@ -459,6 +468,13 @@ nav ul li a {
 
   .testimonial {
     padding: 0 20px;
+  }
+
+  .intro-button-container {
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: row;
+    margin-right: 10rem;
   }
 
 }
