@@ -43,7 +43,7 @@ function menuNavigation() {
     Projects: "#projects",
     "Experience & Education": "#experience-and-education",
     References: "#references",
-    "Get in Touch": "#contact-me",
+    Contact: "#contact-me"
   };
 
   $(".menu-options ul li").on("click", function (e) {
