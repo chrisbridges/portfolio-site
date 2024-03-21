@@ -13,16 +13,26 @@ function fadeInSkills() {
   });
 }
 
-function getStartedClick() {
-  $(".get-started").click(function () {
-    let aTag = $("#projects");
-    // headerPadding value chosen because it seemed to look best
-    let headerPadding = 18;
-    $("html,body").animate(
-      { scrollTop: aTag.offset().top + headerPadding },
-      "slow"
-    );
-  });
+function introButtonNavigationClick() {
+  // make this more general-purpose eventually
+  const buttonHash = {
+    ".projects-button": "#projects",
+    ".experiences-button": "#experience-and-education",
+    ".references-button": "#references",
+    ".contact-button": "#contact-me",
+  };
+
+  for (let key in buttonHash) {
+    $(key).click(function () {
+      let aTag = $(buttonHash[key]);
+      // headerPadding value chosen because it seemed to look best
+      let headerPadding = 18;
+      $("html,body").animate(
+        { scrollTop: aTag.offset().top + headerPadding },
+        "slow"
+      );
+    });
+  }
 }
 
 function menuNavigation() {
@@ -93,7 +103,7 @@ function changeReferencesColor() {
 
 $(document).ready(function () {
   fadeInSkills();
-  getStartedClick();
+  introButtonNavigationClick();
   menuNavigation();
   openMenu();
   changeMyStoryColor();
