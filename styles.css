@@ -1,11 +1,35 @@
 /* CSS reset */
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
-  margin:0;
-  padding:0;
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
 }
-html,body {
-  margin:0;
-  padding:0;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
 :root {
@@ -99,9 +123,22 @@ header h1 {
   padding-bottom: 10px;
 }
 
+.intro-text img {
+  max-width: 12rem;
+  max-height: 12rem;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  /* defining the aspect ratio of the image */
+}
+
 .intro-text h2 {
   font-size: 40px;
   font-weight: 300;
+  margin-bottom: 1rem;
 }
 
 nav ul {
@@ -124,6 +161,7 @@ nav ul li a {
 }
 
 #intro .intro-text {
+  margin-top: 50px;
   margin-bottom: 25px;
   font-size: 17px;
 }
@@ -152,7 +190,7 @@ nav ul li a {
 }
 
 .intro-button-container {
-  margin-top: 8rem;
+  margin-top: 6rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -209,6 +247,7 @@ nav ul li a {
   display: inline-block;
   opacity: 0;
 }
+
 /* SVG imports weren't loading proper colors for some icons, so implemented them here */
 .react {
   fill: #00bfff;
@@ -267,34 +306,39 @@ nav ul li a {
 }
 
 .stack-before {
-	animation-name: fade;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: infinite;
-	animation-duration: 3s;
-	animation-direction: alternate;
+  animation-name: fade;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-direction: alternate;
 }
 
 @keyframes fade {
-	0% {
-		opacity: 1;
-	}
-	25% {
-		opacity: 1;
-	}
-	75% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 0;
-	}
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
-.project-image img, .project-image video {
+.project-image img,
+.project-image video {
   width: 100%;
   height: auto;
 }
 
-.left-chevron, .right-chevron {
+.left-chevron,
+.right-chevron {
   display: inline-block;
   margin: 0 2px 0 2px;
   color: var(--my-black);
@@ -356,7 +400,8 @@ nav ul li a {
   margin-top: 20px;
 }
 
-.companies-list, .education-list {
+.companies-list,
+.education-list {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -404,7 +449,9 @@ nav ul li a {
   font-size: 14px;
 }
 
-.testimonial, .testimonial h4, #references p {
+.testimonial,
+.testimonial h4,
+#references p {
   margin-bottom: 20px;
   text-align: center;
 }
@@ -482,6 +529,7 @@ nav ul li a {
 
 /* target iOS devices specifically for background image fixed solution */
 @supports (-webkit-overflow-scrolling: touch) {
+
   /* CSS specific to iOS devices */
   #about-me {
     background: url(https://i.imgur.com/YRrui05.jpg) no-repeat center center;

@@ -16,8 +16,8 @@ function fadeInSkills() {
 function introButtonNavigationClick() {
   // make this more general-purpose eventually
   const buttonHash = {
-    ".projects-button": "#projects",
-    ".experiences-button": "#experience-and-education",
+    // ".projects-button": "#projects",
+    // ".experiences-button": "#experience-and-education",
     ".references-button": "#references",
     ".contact-button": "#contact-me",
   };
@@ -102,10 +102,10 @@ function changeReferencesColor() {
 }
 
 $(document).ready(function () {
-  fadeInSkills();
+  // fadeInSkills();
   introButtonNavigationClick();
-  menuNavigation();
-  openMenu();
-  changeMyStoryColor();
-  changeReferencesColor();
+  // menuNavigation();
+  // openMenu();
+  // changeMyStoryColor();
+  // changeReferencesColor();
 });
