@@ -133,6 +133,7 @@ header h1 {
   object-fit: cover;
   aspect-ratio: 1 / 1;
   /* defining the aspect ratio of the image */
+  margin-bottom: 1rem;
 }
 
 .intro-text h2 {
